@@ -24,9 +24,21 @@ namespace HW1_2
 
         public void PlaceElement(int element, int position)
         {
-            if (position < this.length)
+            if ((position < this.length) && (position >= 0))
             {
                 this.array[position] = element;
+            }
+        }
+
+        public int CheckElement(int position)
+        {
+            if ((position < this.length) && (position >= 0))
+            {
+                return this.array[position];
+            }
+            else
+            {
+                return 0;
             }
         }
 
