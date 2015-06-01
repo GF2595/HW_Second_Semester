@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace HW1_1
 {   
-    class Program
+    public class Program
     {
-        static int factorial(int number)
+        /// <summary>
+        /// Calculates factorial of specified number
+        /// </summary>
+        /// <param name="number">Number, for which factorial will be calculated</param>
+        /// <returns>Result</returns>
+        public static int Factorial(int number)
         {
             int result = 1;
 
@@ -22,10 +27,10 @@ namespace HW1_1
 
         static void Main(string[] args)
         {            
-            Console.WriteLine("Введите число, для которого требуется взять фаткориал");
+            Console.WriteLine("Введите число, для которого требуется взять факториал");
             int number = Convert.ToInt32(Console.ReadLine());
             
-            Console.WriteLine("Результат равен {0}", factorial(number));
+            Console.WriteLine("Результат равен {0}", Factorial(number));
         }
     }
 }

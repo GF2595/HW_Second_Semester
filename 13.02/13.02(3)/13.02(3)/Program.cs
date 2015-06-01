@@ -4,70 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HW1_2
+namespace HW1_3
 {
-    class Array
-    {
-        private int length;
-        private int[] array;
-
-        public Array(int size)
-        {
-            length = size;
-            array = new int[length];
-
-            for (int i = 0; i < length; i++)
-            {
-                array[i] = 0;
-            }
-        }
-
-        public void PlaceElement(int element, int position)
-        {
-            if ((position < this.length) && (position >= 0))
-            {
-                this.array[position] = element;
-            }
-        }
-
-        public int CheckElement(int position)
-        {
-            if ((position < this.length) && (position >= 0))
-            {
-                return this.array[position];
-            }
-            else
-            {
-                return 0;
-            }
-        }
-
-        public void BubbleSort()
-        {
-            for (int i = 0; i < this.length - 1; i++)
-            {
-                for (int j = 0; j < this.length - i - 1; j++)
-                {
-                    if (this.array[j] > this.array[j + 1])
-                    {
-                        int temp = this.array[j];
-                        this.array[j] = this.array[j + 1];
-                        this.array[j + 1] = temp;
-                    }
-                }
-            }
-        }
-
-        public void Print()
-        {
-            for (int i = 0; i < this.length; i++)
-            {
-                Console.Write("{0} ", this.array[i]);
-            }
-
-            Console.WriteLine();
-        }
-    }
     class Program
     {
         static void Main(string[] args)

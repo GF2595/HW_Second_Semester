@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace HW1_2
 {
-    class Program
+    public class Program
     {
-        static int fibonacci(int n)
+        /// <summary>
+        /// Calculates specified Fibonacci number
+        /// </summary>
+        /// <param name="n">Position of required number in Fibonacci sequence</param>
+        /// <returns>Required Fibonacci number</returns>
+        public static int Fibonacci(int n)
         {
             if (n <= 2)
             {
@@ -30,12 +35,13 @@ namespace HW1_2
                 return number;
             }
         }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Введите номер нужного числа Фибоначчи");
             int number = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("{0}-ое число Фибоначчи - {1}", number, fibonacci(number));
+            Console.WriteLine("{0}-ое число Фибоначчи - {1}", number, Fibonacci(number));
         }
     }
 }

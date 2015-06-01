@@ -2,25 +2,25 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-// Управление общими сведениями о сборке осуществляется с помощью 
+// Управление общими сведениями о сборке осуществляется посредством следующего 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("13.02(2)")]
+[assembly: AssemblyTitle("13.02(1).Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Pirat.ca")]
-[assembly: AssemblyProduct("13.02(2)")]
+[assembly: AssemblyProduct("13.02(1).Tests")]
 [assembly: AssemblyCopyright("Copyright © Pirat.ca 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-// Параметр ComVisible со значением FALSE делает типы в сборке невидимыми 
-// для COM-компонентов.  Если требуется обратиться к типу в этой сборке через 
-// COM, задайте атрибуту ComVisible значение TRUE для этого типа.
+// Задание значения false для атрибута ComVisible приведет к тому, что типы из этой сборки станут невидимыми 
+// для COM-компонентов.  Если к одному из типов этой сборки необходимо обращаться из 
+// модели COM, задайте для атрибута ComVisible этого типа значение true.
 [assembly: ComVisible(false)]
 
-// Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("089d376e-a44d-4108-ac3d-61f34c7da2d1")]
+// Если данный проект доступен для модели COM, следующий GUID используется в качестве идентификатора библиотеки типов
+[assembly: Guid("8f211dfa-aabf-44ad-b865-d96cefbc6f5e")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
@@ -31,6 +31,6 @@ using System.Runtime.InteropServices;
 //
 // Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
-// [assembly: AssemblyVersion("1.0.*")]
+// [сборка: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
